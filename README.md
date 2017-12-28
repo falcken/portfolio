@@ -5,7 +5,7 @@ My personal portfolio, used to showcase my work.
 
 * [fullPage.js](http://www.dropwizard.io/1.0.2/docs/) - Making the site look sexy, and full screened.
 * [flowType.js](https://maven.apache.org/) -For responsive text management.
-* [anime.js](https://rometools.github.io/rome/) - Making those sexy animations posible (tho not as sexy as the real deal).
+* [anime.js](https://rometools.github.io/rome/) - Making those sexy animations posible.
 * [Moving Letters](http://tobiasahlin.com/moving-letters/) - Almost all text animations are made using Moving Letters by Tobias Ahlin.
 
 ## Authors
