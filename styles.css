@@ -253,6 +253,10 @@ body {
     .ml3 {
         width: 98% !important;
     }
+    
+    .arrow-text {
+        font-size: 1.3em;
+    }
 }
 
 .button {
