@@ -95,7 +95,7 @@
                 $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
             });
             
-            if($("view").width() < 750) {
+            if($(window).width() < 767) {
                 var mobile_width = 1000;
             } else {
                 var mobile_width = $(".ml11 .letters").width();
