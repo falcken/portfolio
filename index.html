@@ -94,6 +94,12 @@
             $('.ml6 .letters').each(function(){
                 $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
             });
+            
+            if($("view").width() < 750) {
+                var mobile_width = 1000;
+            } else {
+                var mobile_width = $(".ml11 .letters").width();
+            }
 
             anime.timeline({loop: false})
                 .add({
@@ -107,7 +113,7 @@
                 duration: 700
             }).add({
                 targets: '.ml11 .line',
-                translateX: [0,$(".ml11 .letters").width()],
+                translateX: [0,mobile_width],
                 easing: "easeOutExpo",
                 duration: 700,
                 delay: 100
@@ -137,7 +143,12 @@
                 targets: '.ml6',
                 opacity: [0,1],
                 easing: "easeOutExpo",
-                duration: 2500
+                duration: 1000
+            }).add({
+                targets: '.arrow-text, .arrow',
+                opacity: [0,1],
+                easing: "easeInOutQuad",
+                duration: 1000
             });
         </script>
     </body>
