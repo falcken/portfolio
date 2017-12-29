@@ -94,9 +94,9 @@
             $('.ml6 .letters').each(function(){
                 $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
             });
-            
+
             if($(window).width() < 767) {
-                var mobile_width = 1000;
+                var mobile_width = 500;
             } else {
                 var mobile_width = $(".ml11 .letters").width();
             }
